@@ -100,9 +100,11 @@ uP = Microprocessor
   implemented; it does not look much into the future; obviously, the stuff 
   already coded is maintained.
 
-# 2. System overview
+# 2. System overview 
 
-[!alt text] (system-overview.png)
+![alt text] (system-overview.png)
+
+---
 
 - the Microcontroller (uC) resides on the root module, which is the part of the 
   Agathis Gateway in charge with controlling the system and handling the 
