@@ -78,27 +78,43 @@ uP = Microprocessor
 ```
 
 ### 1.4 Document structure and reading guide
-- 4+1 view
+
+- architecture 4+1 view
+
 - this is a heavenly view of what uC needs to do.
+
 - what uC can do is beyond the scope of this document; though, it can be 
   inferred from the existing hardware (AP-1) and uC datasheet.
+
 - see how fast you can figure what needs to be done.
+
+- in diagrams with red and gray elements, the red is a *must* and gray is
+  *someday*.
 
 ### 1.5 Document role in an iterative development process
 
 - this document should help understanding the software works; although it is 
   an high-level view, all efforts are made to keep it current.
 
-- some of the outlined features may already coded; check the code.
-
-- the document provide only the next immediate features that need to be 
-  implemented; it does not look much into the future.
+- this document looks only into the next immediate features that need to be 
+  implemented; it does not look much into the future; obviously, the stuff 
+  already coded is maintained.
 
 # 2. System overview
 
-##2.1 System context
+- the Microcontroller (uC) resides on the root module, which is the part of the 
+  Agathis Gateway in charge with controlling the system and handling the 
+  communication between various ports on root or on branches.
+  
+- **uC is the house keeper** of the entire system, continuously in charge with 
+  the power management and monitoring the branches in stand-by state. 
 
-## 2.2 System introduction
+- **the Gateway must be seen as a battery-operated system with opportunistic
+  access to other power sources.** This perspective helps design a power
+  efficient gateway with extended availability.
+
+- The uC has a vital role in minimizing system power consumption; two main sets
+  of HW features to support this: power switches and voltage monitors.
 
 # 3. SYSTEM INTERFACES
 
@@ -107,8 +123,9 @@ uP = Microprocessor
 ### 3.1.1. Gateway access over USB-OTG port:
 
 - an operator may use USB-OTG port for field servicing of the gateway.
-
 - the gateway may connect, upon need, as USB host or as USB device.
+- the USB-OTG port is connected to uP (by default) or uC using a passive switch.
+
 
 ### 3.1.1.1 Root as a USB Host:
 
