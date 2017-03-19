@@ -61,27 +61,40 @@ boot configuration.
 #### 3.1.12. Branch Control
 
 
-# 1. INTRODUCTION
+# 1. Introduction
 ## 1.1 Purpose and Scope
 Help understanding the uC code intention.
 
 ## 1.2 References 
-AP-1 Root Module HW
+[AP-1 Root Module HW](https://github.com/agathis-project/salix-arctica)
+[ATxmega128A1U product folder](http://www.microchip.com/wwwproducts/en/ATxmega128a1u)
+[AM3356 product folder](http://www.ti.com/product/AM3356)
 
 ### 1.3 Definitions and acronyms
 
 ```
 uC = Microcontroller
 uP = Microprocessor
-
 ```
 
 ### 1.4 Document structure and reading guide
-4+1 view
-	
+- 4+1 view
+- this is a heavenly view of what uC needs to do.
+- what uC can do is beyond the scope of this document; though, it can be 
+  inferred from the existing hardware (AP-1) and uC datasheet.
+- see how fast you can figure what needs to be done.
+
 ### 1.5 Document role in an iterative development process
 
-# 2. SYSTEM OVERVIEW
+- this document should help understanding the software works; although it is 
+  an high-level view, all efforts are made to keep it current.
+
+- some of the outlined features may already coded; check the code.
+
+- the document provide only the next immediate features that need to be 
+  implemented; it does not look much into the future.
+
+# 2. System overview
 
 ##2.1 System context
 
