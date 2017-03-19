@@ -102,7 +102,7 @@ uP = Microprocessor
 
 # 2. System overview 
 
-![alt text] (system-overview.png)
+![alt text](system-overview.png)
 
 ---
 
