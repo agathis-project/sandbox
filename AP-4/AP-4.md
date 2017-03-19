@@ -62,22 +62,22 @@ boot configuration.
 
 
 # 1. Introduction
-## 1.1 Purpose and Scope
+## 1.1. Purpose and Scope
 Help understanding the uC code intention.
 
-## 1.2 References 
-[AP-1 Root Module HW](https://github.com/agathis-project/salix-arctica)
-[ATxmega128A1U product folder](http://www.microchip.com/wwwproducts/en/ATxmega128a1u)
-[AM3356 product folder](http://www.ti.com/product/AM3356)
+## 1.2. References 
+- [AP-1 Root Module HW](https://github.com/agathis-project/salix-arctica)
+- [ATxmega128A1U product folder](http://www.microchip.com/wwwproducts/en/ATxmega128a1u)
+- [AM3356 product folder](http://www.ti.com/product/AM3356)
 
-### 1.3 Definitions and acronyms
+### 1.3. Definitions and acronyms
 
 ```
 uC = Microcontroller
 uP = Microprocessor
 ```
 
-### 1.4 Document structure and reading guide
+### 1.4. Document structure and reading guide
 
 - architecture 4+1 view
 
@@ -91,7 +91,7 @@ uP = Microprocessor
 - in diagrams with red and gray elements, the red is a *must* and gray is
   *someday*.
 
-### 1.5 Document role in an iterative development process
+### 1.5. Document role in an iterative development process
 
 - this document should help understanding the software works; although it is 
   an high-level view, all efforts are made to keep it current.
@@ -101,6 +101,8 @@ uP = Microprocessor
   already coded is maintained.
 
 # 2. System overview
+
+[!alt text] (system-overview.png)
 
 - the Microcontroller (uC) resides on the root module, which is the part of the 
   Agathis Gateway in charge with controlling the system and handling the 
